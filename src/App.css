@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+
+.card {
+  border: 1px solid black;
+  width: 500px;
+  margin: 50px auto;
+  padding: 15px;
+  border-radius: 15px;
+}
+.wrapper {
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #007bff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: #007bff;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+.input {
+  padding: 10px 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  border: 2px solid #d1d5db; /* Asosiy chegara rangi */
+  border-radius: 6px; /* Yumaloqlik */
+  background-color: #f9fafb; /* Orqa fon rangi */
+  color: #374151; /* Matn rangi */
+  outline: none;
+  transition: all 0.3s ease;
+  width: 100%; /* Standart kenglik */
+  max-width: 20rem;
+  margin-bottom: 15px;
+}
+
+.input:focus {
+  border-color: #38bdf8; /* Fokuslangan chegara rangi */
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.5); /* Fokus soyasi */
+}
+
+.input:hover {
+  border-color: #60a5fa; /* Hover effekti */
+}
+
+.input-info {
+  border-color: #38bdf8; /* Info rangidagi chegara */
+}
+
+.input-bordered {
+  border: 2px solid #d1d5db; /* Bo'lak chegarasi */
+}
+
+.w-full {
+  width: 100%; /* Kenglikni to'liq egallash */
+}
+
+.max-w-xs {
+  max-width: 20rem; /* Maksimal kenglik */
+}
+
+
+.btn {
+  padding: 8px 16px;
+  border: 2px solid red;
+  border-radius: 5px;
+  background: transparent;
+  color: red;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: red;
+  color: white;
+}

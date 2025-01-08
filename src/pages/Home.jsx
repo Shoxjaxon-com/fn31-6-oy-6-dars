@@ -1,0 +1,26 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+function Home() {
+  // Bloglarning qisqacha ro'yxati
+  const blogs = [
+    { id: 1, title: 'Birinchi blog posti' },
+    { id: 2, title: 'Ikkinchi blog posti' },
+    // Qo'shimcha bloglar
+  ];
+
+  return (
+    <div>
+      <h1>Bosh Sahifa</h1>
+      <ul>
+        {blogs.map(blog => (
+          <li key={blog.id}>
+            <Link to={`/blogs/${blog.id}`}>{blog.title}</Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default Home;
