@@ -1,80 +1,80 @@
-// import axios from "axios";
-// import React, { useState } from "react";
-// import "./App.css";
-// function App() {
-//   const [name, setName] = useState("");
-//   const [email, setEmail] = useState("");
-//   const [password, setPassword] = useState("");
+import axios from "axios";
+import React, { useState } from "react";
+import "./App.css";
+export function App() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-//   function handleSubmit(e) {
-//     e.preventDefault();
+  function handleSubmit(e) {
+    e.preventDefault();
 
-//     let user = {
-//       email: email,
-//       first_name: name,
-//     };
+    let user = {
+      email: email,
+      first_name: name,
+    };
 
-//     axios
-//       .post("https://reqres.in/api/users", user, {
-//         handeres: {
-//           "Contenet-type ": "application/josn",
-//         },
-//       })
-//       .then((respons) => {
-//         console.log(25, respons);
-//       })
-//       .catch((error) => {
-//         console.log(error);
-//       });
+    axios
+      .post("https://reqres.in/api/users", user, {
+        handeres: {
+          "Contenet-type ": "application/josn",
+        },
+      })
+      .then((respons) => {
+        console.log(25, respons);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
 
-//     setName("");
-//     setEmail("");
-//     setPassword("");
-//   }
+    setName("");
+    setEmail("");
+    setPassword("");
+  }
 
-//   return (
-//     <div className="card">
-//       <form onSubmit={handleSubmit} className="wrapper">
-//         <div className="name">
-//           <input
-//             type="text"
-//             placeholder="Enter your name ..."
-//             className="input"
-//             value={name}
-//             onChange={(e) => {
-//               setName(e.target.value);
-//             }}
-//           />
-//         </div>
-//         <div className="email">
-//           <input
-//             type="email"
-//             placeholder="Enter your email ..."
-//             className="input"
-//             value={email}
-//             onChange={(e) => {
-//               setEmail(e.target.value);
-//             }}
-//           />
-//         </div>
-//         <div className="password">
-//           <input
-//             type="password"
-//             placeholder="Enter your enail password ..."
-//             className="input"
-//             value={password}
-//             onChange={(e) => {
-//               setPassword(e.target.value);
-//             }}
-//           />
-//         </div>
-//         <button className="btn">Save</button>
-//       </form>
-//     </div>
-//   );
-// }
+  return (
+    <div className="card">
+      <form onSubmit={handleSubmit} className="wrapper">
+        <div className="name">
+          <input
+            type="text"
+            placeholder="Enter your name ..."
+            className="input"
+            value={name}
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
+          />
+        </div>
+        <div className="email">
+          <input
+            type="email"
+            placeholder="Enter your email ..."
+            className="input"
+            value={email}
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
+          />
+        </div>
+        <div className="password">
+          <input
+            type="password"
+            placeholder="Enter your enail password ..."
+            className="input"
+            value={password}
+            onChange={(e) => {
+              setPassword(e.target.value);
+            }}
+          />
+        </div>
+        <button className="btn">Save</button>
+      </form>
+    </div>
+  );
+}
 
-// export default App;
+export default App;
 
 // import React, { useEffect, useState } from "react";
 // import axios from "axios";
